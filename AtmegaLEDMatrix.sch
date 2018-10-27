@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:AtmegaLEDMatrix-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1827,12 +1828,12 @@ Wire Wire Line
 $Comp
 L Transistor_Array:ULN2802A U3
 U 1 1 5CAE239B
-P 6000 6350
-F 0 "U3" H 6000 6917 50  0000 C CNN
-F 1 "ULN2802A" H 6000 6826 50  0000 C CNN
-F 2 "" H 6050 5700 50  0001 L CNN
-F 3 "http://www.promelec.ru/pdf/1536.pdf" H 6100 6150 50  0001 C CNN
-	1    6000 6350
+P 5950 5800
+F 0 "U3" H 5950 6367 50  0000 C CNN
+F 1 "ULN2802A" H 5950 6276 50  0000 C CNN
+F 2 "" H 6000 5150 50  0001 L CNN
+F 3 "http://www.promelec.ru/pdf/1536.pdf" H 6050 5600 50  0001 C CNN
+	1    5950 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1849,18 +1850,16 @@ $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5CB19438
-P 6000 7200
-F 0 "#PWR04" H 6000 6950 50  0001 C CNN
-F 1 "GND" H 6005 7027 50  0000 C CNN
-F 2 "" H 6000 7200 50  0001 C CNN
-F 3 "" H 6000 7200 50  0001 C CNN
-	1    6000 7200
+P 5950 6650
+F 0 "#PWR04" H 5950 6400 50  0001 C CNN
+F 1 "GND" H 5955 6477 50  0000 C CNN
+F 2 "" H 5950 6650 50  0001 C CNN
+F 3 "" H 5950 6650 50  0001 C CNN
+	1    5950 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7250 4700 7250 4800
-Wire Wire Line
-	6000 7050 6000 7200
 $Comp
 L Connector_Generic:Conn_02x03_Top_Bottom J3
 U 1 1 5CB70CA7
@@ -1999,4 +1998,6 @@ Wire Wire Line
 Connection ~ 9150 1350
 Wire Wire Line
 	9150 1350 9150 1400
+Wire Wire Line
+	5950 6500 5950 6650
 $EndSCHEMATC
